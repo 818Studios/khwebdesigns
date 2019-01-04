@@ -1,0 +1,141 @@
+/* Small Screen (mobile) Media*/
+
+/* Full-Page Styles */
+  * {
+    margin: 0;
+    
+  }
+
+  .page-wrap {
+    margin: 0 auto;
+    background-color: #B6C9D4;
+    color: #000000; 
+    font-family: 'Roboto', sans-serif;
+ 
+}  
+
+/* Header Styles */
+#navbar {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  background-color: #00a86c;
+}
+
+#navbar ul li{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  flex-grow: 1;
+  
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 1em 1.5em;
+}
+
+a:hover {
+  color: #00FFFF;
+}
+
+/* Welcome Section */
+
+main {
+  margin-bottom: 0;
+}
+  
+
+
+#welcome-section {
+  height: 100vh;
+
+  /* background image compliments of Samuel Zeller on Unsplash.com */
+  background-image: url(images/Glacier_Lake.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 10px 6px 3px black;
+}
+
+#welcomeHeader {
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+  width: 50%;
+  background-color: rgba(125, 125, 125, .3);
+  border: 1px dotted red;
+}
+
+/* Projects Section */
+
+#projects {
+  background-image: url(images/samuel-zeller-722382-unsplash.jpg);
+  background-size: 100%;
+  color: #FFFFFA;
+  height: 50em;
+}
+
+#projects a {
+  color: #FFFFFA;
+}
+
+.project-tile {
+  display: flex; 
+  
+}
+
+/* Footer */
+
+footer {
+  background-color: #00a86b;
+  margin: 0;
+  padding: 1.5em 1.5em;
+  overflow: visible;
+}
+
+/* ----Tablet (medium) ----- */
+@media screen and (min-width: 560px) {
+  /* Full-Page Styles */
+
+  
+/* Header Styles */
+
+  nav ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+
+
+/* Welcome Section */
+
+#welcomeHeader {
+  padding-top: 5em; 
+}
+  
+}
+
+/* Desktop Resolution Media*/
+@media screen and (min-width: 1140px) {
+  /* Full page Styles */
+  
+  /* Header Styles */
+  
+  nav ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+  } 
+  
+
+  
+  
+  
+}
+
+
+
+

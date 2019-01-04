@@ -1,0 +1,70 @@
+/* SCSS Document */
+
+@media only screen and (min-width: 560px) {
+    /* Website CSS */
+    
+    
+    /* Header */
+    #headerTitle {
+        order: 0;
+        font-size: 2.5em;
+    }
+    
+    #tagline {
+        visibility: visible;
+    }
+    
+    
+    /* Navigational Settings */
+    #nav-wrapper {
+        margin-top: 0;
+    }
+    
+    nav ul {
+
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-basis: auto;
+        flex: 1 1 auto;
+        border-right: 1px $primaryColor solid;
+    
+    }
+    
+    nav ul li a {
+        flex: 1 1 auto;
+    }
+    
+    nav ul li:nth-child(4) {
+        border-right: none;
+        
+    }
+    
+    /* Content */
+    
+    .scalingImage {
+        width: 50%;
+        height: auto;
+        float: right;
+        
+        
+    }
+    
+    #visitUsHeader {
+        padding-left: .5em;
+    }
+    
+    
+    #paraBreak {
+        display: block;
+    }
+    
+    /* Footer*/
+    
+} 

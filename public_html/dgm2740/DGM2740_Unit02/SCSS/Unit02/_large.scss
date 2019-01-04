@@ -1,0 +1,60 @@
+/* SCSS File */
+@media only screen and (min-width: 1140px) {
+    /* Website CSS */
+
+    
+    /* Header */   
+    nav {
+        margin-top:0;
+        background-color: $secondaryColor;
+        max-width: none;
+        max-width: 75em;
+        width: 75em;
+
+
+    }
+    
+    nav ul {
+        justify-content: flex-start;
+        width: 36em;
+    
+    }
+    
+    
+    nav ul li a {
+        flex-basis: 20px;
+        
+    }
+    
+    #headerTitle {
+        font-size: 4em;
+    
+    }
+    
+    #logo {
+        width: 20em;
+        height: auto;
+    
+    }
+    
+     
+    #header
+
+    /* Content */
+    
+	.scalingImage {
+    	width: 33%;
+        height: auto;
+    
+    }
+
+    #hero-wrapper-div{
+        margin: 0 auto;
+        padding: 0 .25em;
+    }
+    
+    
+    /* Footer*/
+
+
+}

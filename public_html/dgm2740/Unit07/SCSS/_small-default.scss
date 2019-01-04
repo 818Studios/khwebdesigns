@@ -1,0 +1,167 @@
+/* CSS DOCUMENT */
+
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	
+
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+
+//===================================== NAVIGATION LAYOUT ================================
+nav{
+	background-color: $primaryNav;
+//	position: absolute;
+//	top: 0;
+
+	width: 100%;
+	
+	button{
+		background-color: $primaryNav;
+		color: white;
+		background-size: cover;
+		border-radius: .5rem;
+		
+		i{
+			padding: .5rem 1rem;
+		}
+		
+	}
+	
+	button{
+		width: 6rem;
+		height: 3rem;
+		margin: .5rem $edge;
+	}
+	
+	#searchbar{
+		float: right;
+		height: 2rem;
+		width: 50%;
+		margin:  .5rem $edge;
+	}
+	
+	
+	ul{
+			text-align: center;
+
+		
+		
+		li{
+			list-style-type: none;
+			
+			
+			
+			
+			a{
+				display: block;
+				color: #FFFFFF;
+				text-decoration: none;
+				padding: .7rem $edge;
+				border-bottom: solid 1px rgba(0, 0, 10, .7);
+				
+			}
+			
+			
+		}
+		
+		
+	}
+	
+	ul.closed{
+		display: none;
+		
+	}
+
+}
+
+
+
+
+
+//================================ MAIN CONTENT LAYOUT ===================================
+
+//=========================== COLUMN LAYOUT ==============================================
+
+
+.row {
+	clear: both;
+}
+
+.column{
+	.column{ padding: 0 $edge;}
+}
+
+
+@for $i from 1 through 12 {
+	$w: ($i / 12) * 100%;
+	.small-#{$i} {
+		width: $w; float: left;
+	}
+}
+
+
+//================================== FOOTER SOCIAL ICONS =================================
+footer{
+	background-color: $primaryNav;
+	
+	
+	ul.social{
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		
+		li{
+			list-style-type: none;
+			float: left;
+
+			
+			i{
+				font-size: 1.8rem;
+				padding: .5rem 0 .5rem .5rem;
+				color: #FFFFFF;
+				display: block;
+				margin: 0 auto;
+				
+			}
+		
+			
+			a:hover {
+				color: $secondaryColor;
+			}
+		}
+	
+	}
+	
+	
+	
+}
+
+
+
+
+//=========================== CLEARFIX ===================================================
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+
+

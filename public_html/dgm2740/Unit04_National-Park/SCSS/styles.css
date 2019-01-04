@@ -1,0 +1,302 @@
+/* CSS Document */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* Global */
+/* Text Colors */
+/* Text Sizes */
+/* Header */
+/* Navigation */
+/* Background Colors */
+/* Text Colors */
+/* Content */
+/*---------------------------------- Page-Wide Styles ----------------------------------*/
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*---------------------------------- Header Styles ----------------------------------*/
+header {
+  height: 100px;
+  background-image: url(../Images/header0560.jpg);
+  color: lightgrey;
+}
+header h1 {
+  font-size: 2.25em;
+  padding: 1rem 2% 0 2%;
+}
+header h2 {
+  font-size: 1.75em;
+  padding: 0 2% 0.25rem 2%;
+}
+
+/*---------------------------------- Navigation Styles ----------------------------------*/
+nav {
+  box-shadow: 0px 4px 5px -3px #626361;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  width: 25%;
+  text-align: center;
+  padding: .75rem .25rem;
+  background-color: #485074;
+}
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 1em;
+}
+nav ul .active {
+  background-color: #DAE3F3;
+}
+nav ul .active a {
+  color: #3E3534;
+}
+
+/*---------------------------------- Content Styles ----------------------------------*/
+.main-content-wrapper {
+  background-color: #DAE3F3;
+}
+
+main {
+  padding: 1em 2%;
+  color: #636363;
+}
+main h1 {
+  font-size: 2.25em;
+}
+main div {
+  padding: 1em 0;
+}
+main div h2 {
+  font-size: 1.75em;
+}
+main div p {
+  padding-top: .25em;
+}
+main .event-wrapper {
+  margin-top: 1em;
+}
+
+/*---------------------------------- Footer Styles ----------------------------------*/
+footer {
+  background-color: #485074;
+  padding: .5em 1em;
+  text-align: center;
+  color: lightgrey;
+}
+footer a {
+  text-decoration: none;
+  color: lightgrey;
+}
+footer a :hover {
+  color: #FFFFFA;
+}
+
+/* Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 35rem) {
+  /*---------------------------------- Page-Wide Styles ----------------------------------*/
+  header, main {
+    margin: 0 auto;
+  }
+
+  /*---------------------------------- Header Styles ----------------------------------*/
+  header {
+    height: 130px;
+    background-image: url(../Images/header1024.jpg);
+  }
+  header h1 {
+    padding-top: 2rem;
+  }
+
+  .header-wrapper {
+    background: linear-gradient(#DAE3F3, #715F51);
+  }
+
+  /*---------------------------------- Navigation Styles ----------------------------------*/
+  nav ul {
+    padding-left: 4%;
+    margin: 0 auto;
+  }
+  nav ul li {
+    width: auto;
+    padding: .75rem .75rem;
+  }
+  nav ul li a {
+    border-left: 2px lightslategrey solid;
+    color: #FFFFFA;
+    padding-left: 1em;
+  }
+  nav ul li:first-child a {
+    border-left: none;
+  }
+
+  .nav-wrapper {
+    background-color: #485074;
+  }
+
+  /*---------------------------------- Content Styles ----------------------------------*/
+  main .event-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .event-wrapper .event {
+    width: 50%;
+    float: left;
+  }
+
+  /*---------------------------------- Footer Styles ----------------------------------*/
+}
+@media only screen and (min-width: 60rem) {
+  /*---------------------------------- Page-Wide Styles ----------------------------------*/
+  header, main {
+    max-width: 60rem;
+  }
+
+  /*---------------------------------- Header Styles ----------------------------------*/
+  header {
+    height: 130px;
+    background-image: url(../Images/header1600.jpg), url(../Images/headerRepeat.jpg);
+    background-repeat: no-repeat, repeat-x;
+  }
+
+  /*---------------------------------- Navigation Styles ----------------------------------*/
+  nav ul {
+    max-width: 60rem;
+    padding-left: 1rem;
+  }
+
+  /*---------------------------------- Content Styles ----------------------------------*/
+  main {
+    padding: 0;
+  }
+  main .event-wrapper .event {
+    width: 33%;
+  }
+
+  /*---------------------------------- Footer Styles ----------------------------------*/
+}

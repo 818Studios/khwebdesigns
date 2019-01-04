@@ -1,0 +1,314 @@
+/* CSS DOCUMENT */
+
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+	margin: 0 auto;
+	
+	h1{
+		font-size: 2rem;
+	}
+	
+	h2{
+		font-size: 1.5rem;
+	}
+
+}
+
+//======================HEADER=========================================================
+.header-wrapper {
+	width: 100%;
+	background-color: $irishOrange;
+}
+header {
+			height: 125px;
+			position: relative; //Must be relative so that we can move the social sprites to the upper left corner. The sprites will have a position of absolute.
+			max-width: 1200px;
+			margin: 0 auto;
+
+	figure.logo {
+		position: absolute;
+		bottom: 0;
+		left: $edge;
+	}
+
+	h1, h2 {
+		padding-left: (110px);
+		bottom: 0;
+	}
+	
+	h1{
+		padding-top: 4.5rem;
+		font-size: 1.75rem;
+	}
+	
+	h2{
+		font-size: 1.25rem;
+		
+	}
+
+	
+//=======================HEADER SOCIAL ICONS======================================	
+	
+	
+	ul.social {
+		position: absolute;
+		list-style-type: none;
+		right: 0;
+		top: 0.5rem;
+		width: auto;
+	}
+	
+	ul.social li {
+		position: relative;
+		margin: 0 .1rem;
+		float: left;
+		width: 30%;
+		}
+		
+	
+	
+	ul.social li a {
+		display: block; 
+		margin: 0 .5rem;
+		background-image: url("../Images/socialSprites.png");
+		height: 45px;
+		width: 45px;
+	}
+	
+	ul.social .linkedIn a{
+		background-position: 0 -45px;
+	}
+	
+	ul.social .facebook a{
+		background-position: -45px -45px;
+	}
+	
+	ul.social .twitter a{
+		background-position: -90px -45px;
+	}
+	
+	ul.social .linkedIn a:hover{
+		background-position: 0 0;
+	}
+	
+	ul.social .facebook a:hover{
+		background-position: -45px 0;
+	}
+	
+	ul.social .twitter a:hover{
+		background-position: -90px 0;
+	}
+	
+	
+}
+
+//======================= NAVIGATION ====================================================
+nav{
+	background-color: $irishGreen;
+	height: auto;
+	
+	ul{
+		list-style-type: none;
+		max-width: 1200px;
+		margin: 0 auto;
+		
+		li{	
+			background-color: $irishGreen;
+			float: left;
+			width: 25%;
+			text-align: center;
+
+			
+			a{
+				display: block;
+				margin: 0 auto;
+				text-decoration: none;   
+				color: $irishWhite;
+				border-right: 1px $secondaryNav solid;
+				padding: 1em .5em;
+				font-size: 12px;
+			}
+		}
+		
+		li.active{
+			background-color: $secondaryNav;
+		}
+		
+	}
+	
+
+	
+	
+}
+
+
+
+
+//--------------CONTENT-------------------------------------------------------------------
+main {
+		
+	max-width: 1200px;
+	margin: 0 auto;
+	
+	
+	.members{
+		padding: 0 $edge 1rem $edge;
+
+		
+	}	
+	
+	h1{
+		padding: 1rem $edge;
+		
+	}
+	
+	h2{
+		padding: .5rem 0;
+	}
+
+			
+	}
+
+figure.article {
+	width: 50%;
+	
+}
+
+figure.article img {
+	width: 100%;
+	max-width: 1200px;
+}
+
+	figure.danDrummer {
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);		
+		shape-outside: circle(50% at 50% 50%);
+		float: right;
+		margin: .5rem;	
+	
+	}	
+	
+	figure.samSinger {
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);	
+		shape-outside: circle(50% at 50% 50%);
+		float: right;
+		margin: .5rem;
+	
+	}
+	
+	figure.grantGuitar {
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);		
+		shape-outside: circle(50% at 50% 50%);
+		float: right;
+		margin: .5rem;
+		
+	}
+	
+	figure.billBackup {
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);		
+		shape-outside: circle(50% at 50% 50%);
+		float: right;
+		margin: .5rem;	
+
+	}
+
+
+//========================= For Lazy Loading =========================================
+article.lazyLoad figure{
+//	width: 100%;
+	height: 0;
+	padding-bottom: 66.66%; /* You define this doing height/width * 100%  if the image you will use or the average image size you will use*/
+	position: relative;
+
+	
+}
+
+
+article.lazyLoad picture{
+	width: 100%;
+
+}
+
+article.lazyLoad figure img {
+	width: 100%;
+	/* height: auto */
+//	position: absolute;
+}
+
+#concertEleven {
+	padding-bottom: 56.25%;
+}
+
+
+
+
+
+
+
+
+//=======================COLUMN LAYOUT===================================================
+
+.row {
+	clear: both;
+}
+
+
+@for $i from 1 through 12 { //i is the variable representing each row
+	$w: ($i / 12) * 100%; //width of columns
+	.small-#{$i} {
+		width: $w; float: left;
+	}
+}
+
+//Column for Concert images on small & medium devices 
+
+
+//div.concerts{
+//	width: 100%;
+//	
+//	img {
+//		width: 100%;
+//	}
+//}
+
+//================================ FOOTER LAYOUT =========================================
+
+div.footer-wrapper {
+	background-color: $irishGreen;
+	
+	
+	footer {
+		text-align: center;
+		max-width: 1200px;
+		color: $irishWhite;
+		padding: 1rem;
+		margin-top: .5em;
+	}
+}
+
+h2.hideMe {
+	visibility: hidden;
+}
+
+
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

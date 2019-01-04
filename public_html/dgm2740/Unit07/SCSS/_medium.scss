@@ -1,0 +1,81 @@
+/* MEDIUM SCSS DOCUMENT FOR TABLETS */
+
+@media only screen and (min-width: 560px) {
+
+	
+//============================ NAVIGATION LAYOUT ====================================
+	nav{
+		 
+		button{
+			display: none;
+		}
+		
+		ul{
+			margin-left: $edge;
+			
+			
+			li{
+				float: left;
+				
+				
+				a{
+					border: none;
+					border-right: 1px solid rgba(0, 0, 10, .7);
+					padding: .7rem .9rem;
+					transition: background 0.3s linear;
+					-webkit-transition: background 0.3s linear;
+					
+				}
+				
+				a:hover{
+					background-color: darken($primaryNav, 10%);
+				}
+				
+				
+				
+			}
+			
+			li.active{
+				background-color: lighten($primaryNav, 10%)
+			}
+			
+		}
+		
+		ul.closed {
+			display: block;
+		}
+	}
+	
+	
+
+	
+	
+	
+	
+//==================== COLUMN LAYOUT ==========================================	
+@for $i from 1 through 12 {
+	$w: ($i / 12) * 100%;
+	.medium-#{$i} {
+		width: $w; float: left;
+	}
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+//================================= FOOTER ==========================================	
+//================================= FONTAWESOME SOCIAL ICONS ========================
+	
+	footer{
+		ul.social li i{
+			font-size: 2.5rem;
+		}
+	}
+	
+	
+} /* end media query */

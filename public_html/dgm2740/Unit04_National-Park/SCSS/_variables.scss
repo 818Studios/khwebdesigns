@@ -1,0 +1,32 @@
+/* Global */
+    /* Text Colors */
+    $primaryColor: lightgrey;
+    $boldWeight: bold;
+
+    /* Text Sizes */
+    $h1: 2.25em;
+    $h2: 2em;
+    $h3: 1.75em;
+    $h4: 1.5;
+    $paraText: 1em;
+
+/* Header */
+
+
+/* Navigation */
+    /* Background Colors */
+    $primaryNavColor: rgb(72, 80, 116);
+    $secondaryNavColor: rbga(75, 73, 89);
+    $activeNav: #DAE3F3;
+
+    /* Text Colors */
+    $navTextColor: #FFFFFA;
+    $secondaryNav: #3E3534;
+
+
+    
+
+/* Content */
+//Gutters on the side of small pages
+$edge: 2%; 
+$dblEdge: ($edge * 2);

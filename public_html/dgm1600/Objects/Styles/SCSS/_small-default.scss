@@ -1,0 +1,442 @@
+/* SCSS DOCUMENT */
+//================================== FULL PAGE LAYOUT ======================================
+
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+	
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+	margin: 0 auto;
+	font-family: retiro-std-48pt,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: $outerBackground;
+}
+
+
+
+
+
+//==================================== HEADER LAYOUT ======================================
+
+
+
+
+//================================== NAVIGATION LAYOUT ====================================
+.nav-wrapper{
+	background-color: $primaryNav;
+	height: 2em;
+
+	nav{
+			background-color: $primaryNav; 
+			max-width: 1200px;
+			margin: 0 auto;
+
+		ul{
+			display: flex;
+			list-style-type: none;
+			justify-content: space-around;
+
+			li{
+				flex-direction: row;
+				padding: .5em 0;
+				border-right: 1px solid $secondaryNav;
+				transition: background-color .25s linear;
+				-webkit-transition: background-color .25s linear;
+
+
+				
+				a{
+					text-decoration: none;
+					display: block;
+					color: $lightText;
+					text-align: center;
+
+
+
+				}
+				
+				ul{
+					visibility: hidden;
+					background: lighten($primaryNav, 10%);
+					z-index: 99;
+					position: absolute;
+					display: flex;
+					flex-direction: column;
+					margin-left: none;
+					padding-left: none;
+					
+					
+					li{
+						border-right: none;
+						border-bottom: 1px $secondaryNav solid;
+						width: 100%;
+						padding: .5em 1em;
+					}
+				
+
+					li.active{
+						background-color: $secondaryNav;
+
+					}
+				}
+
+
+			}
+
+			li:hover{
+				background-color: $secondaryNav;
+				
+			}
+
+			li:hover ul{
+				visibility: visible;
+			}
+
+			li.active{
+				background-color: $secondaryNav;
+			}
+		}
+
+		ul:nth-child(1) {
+			border-left: 1px solid $secondaryNav;
+		}
+
+	}
+}
+nav ul li.active{
+	background-color:$secondaryNav;
+}
+
+nav ul li ul li.active{
+	background-color:$secondaryNav;
+}
+
+//================================= MAIN CONTENT LAYOUT ===================================
+main{
+	background-color: $innerBackground;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 90vh;
+
+
+
+	.title-wrapper{
+			display: flex;
+			flex-direction: column;
+			align-self: center;
+			margin-top: 4em;
+
+		
+		
+			h1 {
+				font-size: 2.5em;
+			}
+			
+			h2{
+				font-size: 1.5em;
+			}
+
+	}
+
+
+
+	.dog-wrapper{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+		.dog{
+			position: absolute;
+			top: 40%;
+			display: flex;
+			flex-direction: column;
+
+				.head{
+					background-color: $brown;
+					width: 100px;
+					height: 100px;
+					border-radius: 50%;
+					z-index: 2;
+
+
+
+					.eye1{
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						background-color: #FFFFFA;
+						z-index: 2;
+						position: absolute;
+						top: 15%;
+						
+						.pupil1{
+							position: absolute;
+							width: 20px;
+							height: 20px;
+							border-radius: 50%;
+							background-color: black;
+							top: 25%;
+							left: 10%;
+							 
+						}
+			
+					}
+
+					.eye2{
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						background-color: #FFFFFA;
+						z-index: 2;
+						position: absolute;
+						top: 15%;
+						left: 60%;
+
+
+						.pupil2{
+							position: absolute;
+							width: 20px;
+							height: 20px;
+							border-radius: 50%;
+							z-index: 3;
+							background-color: black;
+							top: 25%;
+							left: 10%; 
+						}
+					}
+					.eyelid1{
+						width: 40px;
+						height: 15px;
+						border-radius: 50% 25% 0 0;
+						background-color: $darkBrown;
+						z-index: 2;
+						position: absolute;
+						top: 15%;
+					}
+					.eyelid2{
+						width: 40px;
+						height: 15px;
+						border-radius: 25% 50% 0 0;
+						background-color: $darkBrown;
+						z-index: 5;
+						position: absolute;
+						top: 15%;
+						left: 60%;
+					}
+
+				}
+
+				.nose{
+					position: absolute;
+					height: 20px;
+					width: 20px;
+					border-radius: 50%;
+					background-color: black;
+					left: 40%;
+					top: 55%;
+					z-index: 12;
+				}
+
+				.mouth{
+					position: absolute;
+					width:20px;
+					height: 4px;
+					border-radius: 40%;
+					background-color: black;
+					top: 90%;
+					left: 45%;
+
+				}
+				.ear1{
+					position: absolute;
+					width: 60px;
+					height: 40px;
+					background-color: $darkBrown;
+					z-index: 0;
+					border: 1px white solid;
+					top: -10%;	
+					left: -5%;
+					border-radius: 0 75% 0 50%;
+
+
+				}
+				.ear2{
+					position: absolute;
+					width: 60px;
+					height: 40px;
+					background-color: $darkBrown;
+					z-index: 0;
+					border: 1px white solid;
+					top: -10%;	
+					left: 45%;
+					border-radius: 75% 0 50% 0;
+
+				}
+				.body{
+					background-color: $darkBrown;
+					position: absolute;
+					width: 80px;
+					height: 100px;
+					top: 70%;
+					left: 12%;
+					z-index: 1;
+					border-radius: 5em 5em 2em 2em;
+					align-self: center;
+
+
+
+				}
+
+				.foot1{
+					width: 40px;
+					height: 40px;
+					background-color: $brown;
+					position: absolute;
+					top: 140%;
+					border-radius: 20%;
+					z-index: 0;
+				}
+
+				.foot2{
+					width: 40px;
+					height: 40px;
+					background-color: $brown;
+					position: absolute;
+					top: 140%;
+					left: 64%;
+					border-radius: 20%;
+					z-index: 0;
+				}
+
+				.foot3{
+					width: 30px;
+					height: 70px;
+					background-color: $brown;
+					position: absolute;
+					top: 115%;
+					left: 15%;
+					border-radius:10%;
+					z-index: 2;
+				}
+
+				.foot4{
+					width: 30px;
+					height: 70px;
+					background-color: $brown;
+					position: absolute;
+					top: 115%;
+					left: 58%;
+					border-radius:10%;
+					z-index: 2;
+				}
+
+		}
+
+		.dogForm{
+			margin-top: 2em;
+			background-color: gray;
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			top: 60%;
+			padding: 1em;
+			border-radius: 1em 0 1em 0;
+			justify-content: space-between;
+			align-items: center;
+
+			p {
+				color: $lightText;
+				font-size: 1.5em;
+				font-weight: 100;
+				margin-bottom: 1em;
+			}
+
+			form{
+				color: $lightText;
+				justify-self: flex-end;
+				align-self: flex-start;
+
+
+				input{
+					padding: .25em;
+					border-radius: .25em;
+					border-color: black;
+					color: $secondaryNav;
+				}
+				
+			}
+
+			.firstForm{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				padding-bottom:20px;
+			}
+
+		}
+
+	}
+
+	
+		
+	button{
+		padding: .5em 1em;
+		border-radius: 5%;
+		margin-left: .5em;
+		background-color: $primaryNav;
+		color: $lightText;
+	}
+
+}	
+
+	
+	
+
+//==================================== COLUMN LAYOUT ======================================
+
+
+//==================================== FOOTER LAYOUT ======================================
+
+footer{
+	background-color: $primaryNav;
+	height: 2em;
+	color: $lightText;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	padding: .5em;
+	bottom: 0px;
+	margin-top: 4em;
+}
+
+
+//====================================== CLEARFIX =========================================
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+
+

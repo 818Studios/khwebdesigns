@@ -1,0 +1,49 @@
+/* LARGE SCSS DOCUMENT FOR DESKTOPS */
+
+@media only screen and (min-width: 1140px) {
+
+
+//	NAVIGATIONAL STYLING
+	nav{
+		
+		ul {
+			float: left;
+			
+			li{
+				align-self: center;
+				padding: 0 1em;
+				
+//				a{
+//					display: inline-block;
+//				}
+			}
+			
+		}
+		
+		
+	}
+	
+
+// MAIN CONTENT
+main{
+	.paraColumns{
+		columns: 4;
+	
+	}
+
+	div.ourStory p{
+		margin-bottom: 1.5em;
+
+	}
+	
+
+}	
+  
+	figure.ourFounder img{
+		float: right;
+	}
+
+
+}
+
+

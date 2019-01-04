@@ -1,0 +1,151 @@
+/*---------------------------------- Page-Wide Styles ----------------------------------*/
+
+/* apply a natural box layout model to all elements */ 
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+   // font-family: 'Roboto', sans-serif;
+   font-family: 'Chelsea Market', cursive;
+
+
+} 
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */ 
+
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+
+}
+
+/*---------------------------------- Header Styles ----------------------------------*/
+.header-wrapper {
+    max-width: 71.25em;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: .025em $Edge;
+    padding: 0 $Edge;
+}
+
+header h3 {
+    margin: .75em $Edge;    
+}
+
+/*---------------------------------- Navigation Styles ----------------------------------*/
+.nav-wrapper {
+    max-width: 71.25em;
+    margin: 0 auto;
+    background-color: $navBackground;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    width: 25%;
+    border-right: 1px solid $navBorder;
+    text-align: center;
+}
+
+nav ul li:nth-child(3) {
+    background: $activeLi;
+}
+
+nav ul li:last-child {
+    border: none;
+}
+
+nav ul li a {
+    list-style: none;
+    display: block;
+    padding: .75em 0;
+    color: $lightText;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: #00ff00;
+}
+
+a:hover{
+    color: #00FFaa;
+}
+
+/*---------------------------------- Content Styles ----------------------------------*/
+.content-wrapper {
+    max-width: 71.25em;
+    color: $lightText;
+    background-color: $bodyBackgroundColor;
+}
+
+#produceHeader {
+    font-size: 2em;
+    margin: 0 $Edge;
+    padding-top: .5em;
+    
+}
+
+
+main {
+    margin: 0 auto;
+
+
+    .figImg {
+        width: 100% - $dblEdge;
+        margin: .5em $Edge;
+        padding: 1em $Edge;
+    }
+    
+    .figImg img {
+        width: 100%;
+        box-shadow: 2px 2px 2px $quinaryColor;
+    }
+    
+    figcaption {
+        text-align: center;
+        padding: .5em;
+        background: $figCap;
+        box-shadow: 2px 2px 2px $quinaryColor;
+    }
+
+}
+
+
+
+
+
+/*---------------------------------- Footer Styles ----------------------------------*/
+
+
+footer {
+    max-width: 71.25em;
+    margin: 0 auto;
+    background-color: $navBackground;
+    color: $lightText;
+    text-align: center;
+    padding: .75em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Clearfix */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

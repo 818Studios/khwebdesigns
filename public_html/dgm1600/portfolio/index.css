@@ -1,0 +1,277 @@
+
+/* Small Screen (mobile) Media*/
+
+/* Full-Page Styles */
+  * {
+    margin: 0;
+    font-family: retiro-std-48pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .page-wrap {
+    margin: 0 auto;
+    background-color: #B6C9D4;
+    color: #000000; 
+    font-family: 'Roboto', sans-serif;
+ 
+}  
+
+/* Header Styles */
+
+
+/* Navigation Styling*/
+
+.nav-wrapper{
+	background-color: #6C7D8F;
+	height: 2.5em;
+}
+	nav{
+			background-color: #6C7D8F;
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			float: left;
+			height:100%;
+		}
+	nav	ul{
+			display: flex;
+			list-style-type: none;
+			justify-content: flex-start;
+			flex-direction: row;
+    }
+	nav ul li{
+				flex-direction: row;
+				border-right: 1px solid #23282E;
+				transition: background-color .25s linear;
+				-webkit-transition: background-color .25s linear;
+				align-self: center;
+				padding: 0 1em;
+
+    }		
+	nav ul li a{
+					text-decoration: none;
+					display: block;
+					color: #E2F2FF;
+					text-align: center;
+					padding: .5em .1em;
+
+
+				}
+				
+	nav ul li ul{
+					visibility: hidden;
+					background: lighten(#6C7D8F, 10%);
+					z-index: 99;
+					position: absolute;
+					display: flex;
+					flex-direction: column;
+					margin-left: none;
+					padding-left: none;
+					
+    }
+
+	nav ul li ul li{
+						background-color: #6C7D8F;
+						border-right: none;
+						border-bottom: 1px #23282E solid;
+						width: 100%;
+						padding: .5em 1em;
+					}
+				
+
+	nav ul li ul li.active{
+						background-color: #23282E;
+
+					}
+				
+
+
+			
+
+	nav ul li:hover{
+				background-color: #23282E;
+				
+			}
+
+	nav ul li:hover ul{
+				visibility: visible;
+			}
+
+	nav ul li.active{
+				background-color: #23282E;
+			}
+		
+
+	nav ul:nth-child(1) {
+			border-left: 1px solid #23282E;
+		}
+
+nav ul li a:hover {
+  color: #00FFFF;
+}
+
+/* Welcome Section */
+
+main {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 1;
+  flex-grow: 3;
+  justify-content: space-around;
+}
+ 
+
+
+.card {
+max-width: 20%;
+max-height: auto;
+margin: 1em;
+color: black;
+cursor: pointer;
+position: relative;
+display: flex;
+flex-direction: column;
+background-clip: border-box;
+border: 1px solid rgba (0,0,0,0.125);
+background-color: #FFFFFA;
+border-radius: 5%;
+box-shadow: 2px 2px 4px 1px rgba(0,0,0,.25);
+}
+
+.card-body{
+flex: 1 1 auto;
+padding: 1.5rem;
+}
+
+
+.card-title{
+margin-bottom: 0.75em;
+}
+
+.card-header{
+  flex: 1 1 auto;
+  padding: .5rem .75rem;
+  background-color: #6C7D8F;
+  border-radius: 3%;
+  color: #E2F2FF;
+}
+
+#welcome-section {
+  font-size: 1.5em;
+
+
+  background-color: cyan;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 10px 6px 3px black;
+}
+
+#welcomeHeader {
+  font-size: 3em;
+}
+
+
+.buttonCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.btn{
+  display: block;
+  margin: 2em auto;
+  padding: .5em 1em;
+  background-color: #17a2b8;
+  border-radius: .5em;
+  color: #E2F2FF;
+  font-size: 1em;
+}
+
+/* Projects Section */
+
+#projects {
+  background-size: 100%;
+  color: #FFFFFA;
+  height: 150em;
+}
+
+#projects a {
+  color: #FFFFFA;
+}
+
+.project-tile {
+  display: flex; 
+  
+}
+
+
+.card {
+  color: #000000;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em 1.5em;
+}
+
+.charList{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-shrink: 4;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #00a86b;
+  margin: 0;
+  padding: 1.5em 1.5em;
+  overflow: visible;
+}
+
+/* ----Tablet (medium) ----- */
+@media screen and (min-width: 560px) {
+  /* Full-Page Styles */
+
+  
+/* Header Styles */
+
+  nav ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+
+
+/* Welcome Section */
+
+#welcomeHeader {
+  padding-top: 5em; 
+}
+  
+}
+
+/* Desktop Resolution Media*/
+@media screen and (min-width: 1140px) {
+  /* Full page Styles */
+  
+  /* Header Styles */
+  
+  nav ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+  } 
+  
+
+  
+  
+  
+}

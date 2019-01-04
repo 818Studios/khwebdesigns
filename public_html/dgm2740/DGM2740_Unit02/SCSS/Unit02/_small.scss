@@ -1,0 +1,190 @@
+/* CSS Document */
+/* Website Style */
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. (first 2 lines) */ 
+html {
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+    background-color: $quinaryColor;
+} 
+
+/* apply a natural box layout model to all elements (first 3 lines) */ 
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+    font-size: 1.2em;
+    color: #FFFFFA;
+} 
+
+/*--- Clearfix ---*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear:both;
+
+}
+
+
+/* Header Style */
+
+#header-page-wrapper {
+    max-width: 75em;
+    margin: 0 auto;
+    
+}
+
+header {
+    display: flex;
+    background-color: $quarternaryColor;
+    padding-bottom: 1em;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#headerTitle {
+    font-size: 2em;
+    order: 2;
+}
+
+#tagline {
+    visibility: hidden;
+    font-size: 1.2em;
+    padding: .25em 0;
+}
+	
+#logo {
+    max-width: 7em;
+    max-height: 8em;
+    padding-left: .25em;
+    margin: 0;
+
+}
+
+hr {
+    height: .5em;
+    background-color: $quarternaryColor;
+    margin: .4em 0 0 0;
+    max-width: 100%;
+}
+
+/* Navigation Style */
+#nav-wrapper {
+    width: 100%;
+    background-color: $secondaryColor;
+    margin-top: 1em;
+
+}
+
+nav {
+    background-color: $secondaryColor;
+    max-width: 75em;
+    margin: 0 auto;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    max-width: 75em;
+    padding: 0;
+}
+
+nav ul li {
+    padding: .75em 0;
+    flex-basis: 50%;
+    border: 2px solid $primaryColor;
+    font-size: 1.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+ .active a:hover {
+    color: $septenaryColor;
+}
+
+li:active{
+    background-color: $senaryColor;
+} 
+
+.active {
+    background-color: $senaryColor;
+}
+
+/* Content Style */
+
+
+#heroPhoto {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+	padding: 0;
+}
+
+.visitUs {
+    background-color: $quinaryColor;
+    font-size: 1.2em;
+    max-width: 75em;
+    margin: 0 auto;
+
+}
+
+#visitUsHeader {
+    font-size: 1.5em;
+}
+
+.scalingImage {
+    width: 100%;
+    height: auto;
+    margin: 1em 0 .5em 0;
+}
+
+p#paraMargin {
+    padding-bottom: 1em;
+}
+
+#paraBreak {
+    display: none;
+}
+
+#hero-wrapper-div {
+	padding: 0;
+	max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer style */
+
+footer {
+    display: flex;
+    background-color: $quarternaryColor;
+    padding: .5em 1em;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-bottom: 5em;
+}
+
+
+/* Body Style */
+#main-wrapper-div {
+	max-width: 1200px;
+    margin: 0 auto;
+	padding: 0 .25em;
+    overflow: visible;
+    box-shadow: 4px 1px 5px black;
+}

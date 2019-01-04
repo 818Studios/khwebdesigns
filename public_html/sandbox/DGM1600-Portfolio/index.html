@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta chartset="utf-8" />
+    <meta name="viewport" width="device-width" initial-scale="1" maximum-scale="1" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+  <body>
+    <div class="page-wrap">
+      <header>
+        <nav id="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="https://github.com/10818122" id="profile-link" target="_blank">Github Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="welcome-section">
+          <h1 id="welcomeHeader">Welcome</h1>
+        </section>
+        <section id="projects">
+          <h1>Projects</h1>
+          <div class="project-tile">
+               <a href="http://dgm2120.818studios.net/08Media/index.html" target="_blank">My Basic html/CSS Project<a>           
+          </div>
+        </section>
+      </main>
+    
+      <footer>
+        &copy; Kurt Heimbigner &bull; UVU Digital Media &bull; 09/2018
+      </footer>
+      <script>
+        var link = document.querySelector('a'); 
+        //the = sign means that 'link' IS ASSIGNED THE VALUE OF what comes after the = sign.
+        //the var 'link' will go through and select the first <a> within the document.
+          // Use this querySelector/querySelectorAll instead of the old getElementByID 
+          console.log("What's going on good person?");
+
+          <!-- Adding content to the DOM: adding a paragraph to #welcome-section -->
+          var welcome = document.querySelector('#welcome-section');
+          var para = document.createElement('p');
+          para.textContent ='We hope you enjoyed the ride!';
+          welcome.appendChild(para);
+
+          var projectH2 = document.querySelector('#projects');
+          var h2 = document.createElement('h2');
+          h2.textContent ='Hey there! How is it going?';
+          projectH2.appendChild(h2);
+          
+          let favFood = [[1, 2, 3, 4]['pizza', 'Manicotti', 'Burrito', 'Popcorn']];
+
+          let myObject = {
+            name: "Kurt",
+            age: "some",
+            favColor: #0000FF,
+            list: favFood
+
+          }
+            console.log(myObject);
+        </script>
+    </div>
+  </body>
+</html>

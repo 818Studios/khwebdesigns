@@ -1,0 +1,60 @@
+/* SCSS DOCUMENT */
+//================================== FULL PAGE LAYOUT ======================================
+
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+
+}
+
+
+
+
+//==================================== HEADER LAYOUT ======================================
+
+
+
+
+//================================== NAVIGATION LAYOUT ====================================
+
+
+
+
+//================================= MAIN CONTENT LAYOUT ===================================
+
+
+
+
+//==================================== COLUMN LAYOUT ======================================
+
+
+
+
+//==================================== FOOTER LAYOUT ======================================
+
+
+
+
+//====================================== CLEARFIX =========================================
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+
+

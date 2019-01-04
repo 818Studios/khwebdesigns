@@ -1,0 +1,35 @@
+/* MEDIUM SCSS DOCUMENT FOR TABLETS */
+
+@media only screen and (min-width: 560px) {
+
+	
+//HEADER CONTENT
+	header{
+		
+		padding-bottom: .5em;
+		h1{
+			padding-left: 4em;
+
+		}
+		h2{
+			padding-left: 4.5em;
+
+		}
+	}
+	
+// MAIN CONTENT
+.paraColumns{
+	columns: 2;
+	column-width: 44px;
+	margin: 0 auto;
+}
+	
+	img.clearfix.founderImg{
+		margin: 1em 0 1em 1em;
+		margin-right: $edge;
+	}
+
+
+
+
+} /* end media query */

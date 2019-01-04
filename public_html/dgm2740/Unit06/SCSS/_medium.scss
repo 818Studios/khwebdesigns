@@ -1,0 +1,48 @@
+/* MEDIUM SCSS DOCUMENT FOR TABLETS */
+
+@media only screen and (min-width: 560px) {
+
+//========================= HEADER CONTENT =========================================
+header {
+	ul.social{
+		bottom: 0.5rem;
+		top: initial;
+	}		
+		
+	
+		h1, h2 {
+			margin-left: 1rem; 
+		}
+	
+		
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+//=========================== MAIN CONTENT ==========================================
+	
+	
+	
+	
+	
+	
+	
+	
+//======================== COLUMN LAYOUT ============================================
+	@for $i from 1 through 12 { //i is the variable representing each row
+	$w: ($i / 12) * 100%; //width of columns
+	.medium-#{$i} {
+		width: $w; float: left;
+	}
+}
+	
+	
+	
+} /* end media query */

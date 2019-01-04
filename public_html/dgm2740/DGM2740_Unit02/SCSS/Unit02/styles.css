@@ -1,0 +1,385 @@
+/* SCSS */
+/* CSS Document */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* CSS Document */
+/* CSS Document */
+/* Website Style */
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. (first 2 lines) */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background-color: #B5D1CB;
+}
+
+/* apply a natural box layout model to all elements (first 3 lines) */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #FFFFFA;
+}
+
+/*--- Clearfix ---*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header Style */
+#header-page-wrapper {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  background-color: darkSlateGray;
+  padding-bottom: 1em;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#headerTitle {
+  font-size: 2em;
+  order: 2;
+}
+
+#tagline {
+  visibility: hidden;
+  font-size: 1.2em;
+  padding: .25em 0;
+}
+
+#logo {
+  max-width: 7em;
+  max-height: 8em;
+  padding-left: .25em;
+  margin: 0;
+}
+
+hr {
+  height: .5em;
+  background-color: darkSlateGray;
+  margin: .4em 0 0 0;
+  max-width: 100%;
+}
+
+/* Navigation Style */
+#nav-wrapper {
+  width: 100%;
+  background-color: lightgray;
+  margin-top: 1em;
+}
+
+nav {
+  background-color: lightgray;
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  max-width: 75em;
+  padding: 0;
+}
+
+nav ul li {
+  padding: .75em 0;
+  flex-basis: 50%;
+  border: 2px solid dimgray;
+  font-size: 1.5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.active a:hover {
+  color: #B7F4E6;
+}
+
+li:active {
+  background-color: #6E7F7C;
+}
+
+.active {
+  background-color: #6E7F7C;
+}
+
+/* Content Style */
+#heroPhoto {
+  max-width: 100%;
+  height: auto;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.visitUs {
+  background-color: #B5D1CB;
+  font-size: 1.2em;
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+#visitUsHeader {
+  font-size: 1.5em;
+}
+
+.scalingImage {
+  width: 100%;
+  height: auto;
+  margin: 1em 0 .5em 0;
+}
+
+p#paraMargin {
+  padding-bottom: 1em;
+}
+
+#paraBreak {
+  display: none;
+}
+
+#hero-wrapper-div {
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer style */
+footer {
+  display: flex;
+  background-color: darkSlateGray;
+  padding: .5em 1em;
+  justify-content: center;
+  font-size: 1.5em;
+  margin-bottom: 5em;
+}
+
+/* Body Style */
+#main-wrapper-div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 .25em;
+  overflow: visible;
+  box-shadow: 4px 1px 5px black;
+}
+
+/* SCSS Document */
+@media only screen and (min-width: 560px) {
+  /* Website CSS */
+  /* Header */
+  #headerTitle {
+    order: 0;
+    font-size: 2.5em;
+  }
+
+  #tagline {
+    visibility: visible;
+  }
+
+  /* Navigational Settings */
+  #nav-wrapper {
+    margin-top: 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    flex: 1 1 auto;
+    border-right: 1px dimgray solid;
+  }
+
+  nav ul li a {
+    flex: 1 1 auto;
+  }
+
+  nav ul li:nth-child(4) {
+    border-right: none;
+  }
+
+  /* Content */
+  .scalingImage {
+    width: 50%;
+    height: auto;
+    float: right;
+  }
+
+  #visitUsHeader {
+    padding-left: .5em;
+  }
+
+  #paraBreak {
+    display: block;
+  }
+
+  /* Footer*/
+}
+/* SCSS File */
+@media only screen and (min-width: 1140px) {
+  /* Website CSS */
+  /* Header */
+  nav {
+    margin-top: 0;
+    background-color: lightgray;
+    max-width: none;
+    max-width: 75em;
+    width: 75em;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+    width: 36em;
+  }
+
+  nav ul li a {
+    flex-basis: 20px;
+  }
+
+  #headerTitle {
+    font-size: 4em;
+  }
+
+  #logo {
+    width: 20em;
+    height: auto;
+  }
+
+  #header
+  .scalingImage {
+    width: 33%;
+    height: auto;
+  }
+
+  #hero-wrapper-div {
+    margin: 0 auto;
+    padding: 0 .25em;
+  }
+
+  /* Footer*/
+}

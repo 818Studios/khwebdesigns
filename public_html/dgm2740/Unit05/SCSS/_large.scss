@@ -1,0 +1,63 @@
+/* LARGE SCSS DOCUMENT FOR DESKTOPS */
+
+@media only screen and (min-width: 1140px) {
+
+
+//	NAVIGATIONAL STYLING
+	nav{
+		
+		ul {
+			float: left;
+			
+			li{
+				align-self: center;
+				padding: 0 1em;
+				
+				a{
+					padding: .5em .1em;
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	
+	
+//HEADER CONTENT
+	header{
+		h1{
+			padding-left: 6em;
+		}
+		
+		h2{
+			padding-left: 7em;
+		}
+	}
+	
+
+// MAIN CONTENT
+main{
+	.paraColumns{
+		columns: 4;
+	
+	}
+
+	div.ourStory{
+		padding-top: 20em;
+	}
+	
+	div.ourStory p{
+		margin-bottom: 1.5em;
+
+	}
+	
+
+}	
+  
+
+
+}
+
+

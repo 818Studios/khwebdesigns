@@ -1,0 +1,45 @@
+/* LARGE SCSS DOCUMENT FOR DESKTOPS */
+
+@media only screen and (min-width: 1140px) {
+	html{
+		margin: 0 auto;
+	}
+
+	
+//====================== HEADER ===========================================
+
+	
+	
+//	picture {
+//		max-width: 1200px;
+//	}	
+		
+	
+	
+	
+	
+	
+//=========================== MAIN CONTENT ==========================================
+	
+
+
+
+	
+	
+//======================== COLUMN LAYOUT ============================================
+	@for $i from 1 through 12 { //i is the variable representing each row
+	$w: ($i / 12) * 100%; //width of columns
+	.large-#{$i} {
+		width: $w; float: left;
+	}
+}
+	
+		
+	h2.hideMe {
+	visibility:visible;
+		padding-bottom: .5em;
+		padding-left: $edge;
+}
+	
+    
+}

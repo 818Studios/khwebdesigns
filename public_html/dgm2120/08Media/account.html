@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allenstar: Home</title>
+<link rel="stylesheet" type="text/css" href="index.css">    
+</head>
+<body>
+ <div id="wrapper">
+       <!-- Start of the Header -->
+    <header>
+        <h1>Allenstarr Custom Computers</h1>
+        <h2>The Way You Are Meant to Mod</h2>
+        
+    </header>
+    <!-- start of the Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="noUnderline">Home</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="inspiration.html" class="noUnderline">Inspiration</a></li>
+        </ul>
+        
+        <ul>
+            <li><a href="build-your-dream.html" class="noUnderline">Build Your Dream</a></li>
+        </ul>
+        <ul>
+            <li><a href="components.html" class="noUnderline">Components</a></li>
+        </ul>
+        <ul>
+            <li><a href="schedule.html" class="noUnderline">Schedule</a></li>
+        </ul>
+            <ul>
+            <li><a href="contact.html" class="noUnderline">Contact Us</a></li>
+        </ul>
+         <ul>
+            <li><a href="account.html" class="active">Account</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Start of the Content -->
+    <main>
+
+        
+        <br><br>
+        <h1>Account</h1>
+         
+        <!-- Begin Form(s) -->       
+        <form method="POST" enctype="multipart/form-data" name="accountLogin" class="form">
+            <fieldset>
+                <legend>Your Name</legend>
+                <label><span>First Name:</span> <input name="firstName" value="" type="text" placeholder="Jane" required pattern="[a-zA-Z]{2,}"></label>
+                <label><span>Last Name:</span> <input name="lastName" value="" type="text" placeholder="Doe" required pattern="[a-zA-Z]{2,}"></label>
+            
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+            <label><span>Email Address:</span> <input name="email" value="" type="email" placeholder="Jane@Doe.com" required pattern="[a-z0-9.-%_@]"></label>
+            <label><span>Phone Number:</span> <input name="phoneNumber" value="" type="tel" placeholder="(555) 555-5555"></label>
+            </fieldset>
+            <fieldset>
+                <legend>How Did You Hear About Us?</legend>
+                    <label><input name="surveyRadio" value="A Friend" type="radio">Friend</label>
+                    <label><input name="surveyRadio" value="A Coworker" type="radio">Coworker</label>
+                    <label><input name="surveyRadio" value="Radio Ad" type="radio">Radio Ad</label>
+                    <label><input name="surveyRadio" value="Windows Store Ad" type="radio">Windows Store Ad</label>
+               
+            </fieldset>
+            <fieldset>
+                <legend>What is Your Experience With Computers? (select one)</legend>
+                <label><input name="Brand New" type="checkbox" value="Brand New">Brand New</label>
+                <label><input name="It's Been a While" type="checkbox" value="It's Been a While">It's Been a While</label>
+                <label><input name="Intermediate" type="checkbox" value="Intermediate">Intermediate</label>
+                <label><input name="Enthusiast" type="checkbox" value="Enthusiast">Enthusiast</label>
+            
+            </fieldset>
+            
+            <fieldset>
+            <legend>Comments</legend>
+                <textarea name="comments" class="inputOther"></textarea>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Age Range (To Purchase Custom Computers)</legend>
+                <select name="selectAge" class="inputOther">
+                    <option>17 and under</option>
+                    <option>18-24</option>
+                    <option>25+</option>
+                </select>
+            </fieldset>
+            
+            <input type="hidden" name="redirect" value="thanks.html">
+            
+            
+            <br>
+            <input name="submit" value="Register" type="submit" class="submitButton"> 
+        </form>
+        
+    </main>
+     
+   
+    <!-- Start of the Footer -->
+    <footer>
+        <p>&copy; 28 JUL 2018 &bull; Allenstarr &bull; Built by 818Studios</p>
+    </footer>    
+</div>
+</body>
+</html>

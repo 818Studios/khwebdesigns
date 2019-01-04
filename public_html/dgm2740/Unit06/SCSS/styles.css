@@ -1,0 +1,522 @@
+/* CSS Document */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* CSS DOCUMENT */
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0 auto;
+}
+html h1 {
+  font-size: 2rem;
+}
+html h2 {
+  font-size: 1.5rem;
+}
+
+.header-wrapper {
+  width: 100%;
+  background-color: #FF883E;
+}
+
+header {
+  height: 125px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header figure.logo {
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+}
+header h1, header h2 {
+  padding-left: 110px;
+  bottom: 0;
+}
+header h1 {
+  padding-top: 4.5rem;
+  font-size: 1.75rem;
+}
+header h2 {
+  font-size: 1.25rem;
+}
+header ul.social {
+  position: absolute;
+  list-style-type: none;
+  right: 0;
+  top: 0.5rem;
+  width: auto;
+}
+header ul.social li {
+  position: relative;
+  margin: 0 .1rem;
+  float: left;
+  width: 30%;
+}
+header ul.social li a {
+  display: block;
+  margin: 0 .5rem;
+  background-image: url("../Images/socialSprites.png");
+  height: 45px;
+  width: 45px;
+}
+header ul.social .linkedIn a {
+  background-position: 0 -45px;
+}
+header ul.social .facebook a {
+  background-position: -45px -45px;
+}
+header ul.social .twitter a {
+  background-position: -90px -45px;
+}
+header ul.social .linkedIn a:hover {
+  background-position: 0 0;
+}
+header ul.social .facebook a:hover {
+  background-position: -45px 0;
+}
+header ul.social .twitter a:hover {
+  background-position: -90px 0;
+}
+
+nav {
+  background-color: #169b62;
+  height: auto;
+}
+nav ul {
+  list-style-type: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav ul li {
+  background-color: #169b62;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #FFFFFF;
+  border-right: 1px #106E45 solid;
+  padding: 1em .5em;
+  font-size: 12px;
+}
+nav ul li.active {
+  background-color: #106E45;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .members {
+  padding: 0 2% 1rem 2%;
+}
+main h1 {
+  padding: 1rem 2%;
+}
+main h2 {
+  padding: .5rem 0;
+}
+
+figure.article {
+  width: 50%;
+}
+
+figure.article img {
+  width: 100%;
+  max-width: 1200px;
+}
+
+figure.danDrummer {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  float: right;
+  margin: .5rem;
+}
+
+figure.samSinger {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  float: right;
+  margin: .5rem;
+}
+
+figure.grantGuitar {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  float: right;
+  margin: .5rem;
+}
+
+figure.billBackup {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  float: right;
+  margin: .5rem;
+}
+
+article.lazyLoad figure {
+  height: 0;
+  padding-bottom: 66.66%;
+  /* You define this doing height/width * 100%  if the image you will use or the average image size you will use*/
+  position: relative;
+}
+
+article.lazyLoad picture {
+  width: 100%;
+}
+
+article.lazyLoad figure img {
+  width: 100%;
+  /* height: auto */
+}
+
+#concertEleven {
+  padding-bottom: 56.25%;
+}
+
+.row {
+  clear: both;
+}
+
+.small-1 {
+  width: 8.3333333333%;
+  float: left;
+}
+
+.small-2 {
+  width: 16.6666666667%;
+  float: left;
+}
+
+.small-3 {
+  width: 25%;
+  float: left;
+}
+
+.small-4 {
+  width: 33.3333333333%;
+  float: left;
+}
+
+.small-5 {
+  width: 41.6666666667%;
+  float: left;
+}
+
+.small-6 {
+  width: 50%;
+  float: left;
+}
+
+.small-7 {
+  width: 58.3333333333%;
+  float: left;
+}
+
+.small-8 {
+  width: 66.6666666667%;
+  float: left;
+}
+
+.small-9 {
+  width: 75%;
+  float: left;
+}
+
+.small-10 {
+  width: 83.3333333333%;
+  float: left;
+}
+
+.small-11 {
+  width: 91.6666666667%;
+  float: left;
+}
+
+.small-12 {
+  width: 100%;
+  float: left;
+}
+
+div.footer-wrapper {
+  background-color: #169b62;
+}
+div.footer-wrapper footer {
+  text-align: center;
+  max-width: 1200px;
+  color: #FFFFFF;
+  padding: 1rem;
+  margin-top: .5em;
+}
+
+h2.hideMe {
+  visibility: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* MEDIUM SCSS DOCUMENT FOR TABLETS */
+@media only screen and (min-width: 560px) {
+  header ul.social {
+    bottom: 0.5rem;
+    top: initial;
+  }
+  header h1, header h2 {
+    margin-left: 1rem;
+  }
+
+  .medium-1 {
+    width: 8.3333333333%;
+    float: left;
+  }
+
+  .medium-2 {
+    width: 16.6666666667%;
+    float: left;
+  }
+
+  .medium-3 {
+    width: 25%;
+    float: left;
+  }
+
+  .medium-4 {
+    width: 33.3333333333%;
+    float: left;
+  }
+
+  .medium-5 {
+    width: 41.6666666667%;
+    float: left;
+  }
+
+  .medium-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .medium-7 {
+    width: 58.3333333333%;
+    float: left;
+  }
+
+  .medium-8 {
+    width: 66.6666666667%;
+    float: left;
+  }
+
+  .medium-9 {
+    width: 75%;
+    float: left;
+  }
+
+  .medium-10 {
+    width: 83.3333333333%;
+    float: left;
+  }
+
+  .medium-11 {
+    width: 91.6666666667%;
+    float: left;
+  }
+
+  .medium-12 {
+    width: 100%;
+    float: left;
+  }
+}
+/* end media query */
+/* LARGE SCSS DOCUMENT FOR DESKTOPS */
+@media only screen and (min-width: 1140px) {
+  html {
+    margin: 0 auto;
+  }
+
+  .large-1 {
+    width: 8.3333333333%;
+    float: left;
+  }
+
+  .large-2 {
+    width: 16.6666666667%;
+    float: left;
+  }
+
+  .large-3 {
+    width: 25%;
+    float: left;
+  }
+
+  .large-4 {
+    width: 33.3333333333%;
+    float: left;
+  }
+
+  .large-5 {
+    width: 41.6666666667%;
+    float: left;
+  }
+
+  .large-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .large-7 {
+    width: 58.3333333333%;
+    float: left;
+  }
+
+  .large-8 {
+    width: 66.6666666667%;
+    float: left;
+  }
+
+  .large-9 {
+    width: 75%;
+    float: left;
+  }
+
+  .large-10 {
+    width: 83.3333333333%;
+    float: left;
+  }
+
+  .large-11 {
+    width: 91.6666666667%;
+    float: left;
+  }
+
+  .large-12 {
+    width: 100%;
+    float: left;
+  }
+
+  h2.hideMe {
+    visibility: visible;
+    padding-bottom: .5em;
+    padding-left: 2%;
+  }
+}

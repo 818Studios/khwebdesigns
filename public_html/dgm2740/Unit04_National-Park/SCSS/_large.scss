@@ -1,0 +1,50 @@
+@media only screen and (min-width: 60rem) {
+
+/*---------------------------------- Page-Wide Styles ----------------------------------*/
+	header, main {
+		max-width: 60rem;
+	}
+	
+/*---------------------------------- Header Styles ----------------------------------*/
+	header{
+		height: 130px;
+		background-image: url(../Images/header1600.jpg), url(../Images/headerRepeat.jpg);
+		background-repeat: no-repeat, repeat-x;
+
+		
+
+
+	}
+
+/*---------------------------------- Navigation Styles ----------------------------------*/
+nav {
+
+	ul{
+		max-width: 60rem;
+		padding-left: 1rem;
+	}
+
+
+}
+
+/*---------------------------------- Content Styles ----------------------------------*/
+main {
+	padding: 0;
+
+	.event-wrapper{
+
+
+		.event{
+			width: 33%;
+
+		}
+	}
+
+}
+	
+/*---------------------------------- Footer Styles ----------------------------------*/
+
+
+
+
+}

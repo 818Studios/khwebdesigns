@@ -1,0 +1,84 @@
+@media only screen and (min-width: 35rem){
+
+/*---------------------------------- Page-Wide Styles ----------------------------------*/
+	header, main{
+		margin: 0 auto;
+	}
+	
+
+/*---------------------------------- Header Styles ----------------------------------*/
+	header{
+		height: 130px;
+		background-image: url(../Images/header1024.jpg);
+
+		h1{
+			padding-top: 2rem;
+
+		}
+		
+
+	}
+
+	.header-wrapper {
+		background: linear-gradient(#DAE3F3,#715F51);
+	}
+
+/*---------------------------------- Navigation Styles ----------------------------------*/
+nav {
+    ul {
+		padding-left: $dblEdge;
+		margin: 0 auto;
+
+    
+        li{
+				width: auto;
+				padding: .75rem .75rem;
+
+            a{
+
+                border-left: 2px lightslategrey solid;
+				color: $navTextColor;
+				padding-left: 1em;
+
+                
+			}
+			
+
+        }
+		
+		li:first-child a{
+			border-left: none;
+		}
+
+    }
+
+}
+
+.nav-wrapper {
+	background-color: $primaryNavColor;
+}
+
+/*---------------------------------- Content Styles ----------------------------------*/    
+
+main{
+
+	.event-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+		.event{
+			width: 50%;
+			float: left;
+		}
+	
+	}
+
+}
+
+
+/*---------------------------------- Footer Styles ----------------------------------*/
+
+
+
+}

@@ -1,0 +1,395 @@
+/* CSS Document */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* SCSS DOCUMENT */
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0 auto;
+  font-family: retiro-std-48pt,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #847560; }
+
+.nav-wrapper {
+  background-color: #05585B;
+  height: 2em; }
+  .nav-wrapper nav {
+    background-color: #05585B;
+    max-width: 1200px;
+    margin: 0 auto; }
+    .nav-wrapper nav ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around; }
+      .nav-wrapper nav ul li {
+        flex-direction: row;
+        padding: .5em 0;
+        border-right: 1px solid #022324;
+        transition: background-color .25s linear;
+        -webkit-transition: background-color .25s linear; }
+        .nav-wrapper nav ul li a {
+          text-decoration: none;
+          display: block;
+          color: #F0F6F6;
+          text-align: center; }
+        .nav-wrapper nav ul li ul {
+          visibility: hidden;
+          background: #08878b;
+          z-index: 99;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          margin-left: none;
+          padding-left: none; }
+          .nav-wrapper nav ul li ul li {
+            border-right: none;
+            border-bottom: 1px #022324 solid;
+            width: 100%;
+            padding: .5em 1em; }
+          .nav-wrapper nav ul li ul li.active {
+            background-color: #022324; }
+      .nav-wrapper nav ul li:hover {
+        background-color: #022324; }
+      .nav-wrapper nav ul li:hover ul {
+        visibility: visible; }
+      .nav-wrapper nav ul li.active {
+        background-color: #022324; }
+    .nav-wrapper nav ul:nth-child(1) {
+      border-left: 1px solid #022324; }
+
+nav ul li.active {
+  background-color: #022324; }
+
+nav ul li ul li.active {
+  background-color: #022324; }
+
+main {
+  background-color: #C6E2E3;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh; }
+  main .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 4em; }
+    main .title-wrapper h1 {
+      font-size: 2.5em; }
+    main .title-wrapper h2 {
+      font-size: 1.5em; }
+  main .dog-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    main .dog-wrapper .dog {
+      position: absolute;
+      top: 40%;
+      display: flex;
+      flex-direction: column; }
+      main .dog-wrapper .dog .head {
+        background-color: #644437;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        z-index: 2; }
+        main .dog-wrapper .dog .head .eye1 {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #FFFFFA;
+          z-index: 2;
+          position: absolute;
+          top: 15%; }
+          main .dog-wrapper .dog .head .eye1 .pupil1 {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            top: 25%;
+            left: 10%; }
+        main .dog-wrapper .dog .head .eye2 {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #FFFFFA;
+          z-index: 2;
+          position: absolute;
+          top: 15%;
+          left: 60%; }
+          main .dog-wrapper .dog .head .eye2 .pupil2 {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            z-index: 3;
+            background-color: black;
+            top: 25%;
+            left: 10%; }
+        main .dog-wrapper .dog .head .eyelid1 {
+          width: 40px;
+          height: 15px;
+          border-radius: 50% 25% 0 0;
+          background-color: #432e25;
+          z-index: 2;
+          position: absolute;
+          top: 15%; }
+        main .dog-wrapper .dog .head .eyelid2 {
+          width: 40px;
+          height: 15px;
+          border-radius: 25% 50% 0 0;
+          background-color: #432e25;
+          z-index: 5;
+          position: absolute;
+          top: 15%;
+          left: 60%; }
+      main .dog-wrapper .dog .nose {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: black;
+        left: 40%;
+        top: 55%;
+        z-index: 12; }
+      main .dog-wrapper .dog .mouth {
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        border-radius: 40%;
+        background-color: black;
+        top: 90%;
+        left: 45%; }
+      main .dog-wrapper .dog .ear1 {
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        background-color: #432e25;
+        z-index: 0;
+        border: 1px white solid;
+        top: -10%;
+        left: -5%;
+        border-radius: 0 75% 0 50%; }
+      main .dog-wrapper .dog .ear2 {
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        background-color: #432e25;
+        z-index: 0;
+        border: 1px white solid;
+        top: -10%;
+        left: 45%;
+        border-radius: 75% 0 50% 0; }
+      main .dog-wrapper .dog .body {
+        background-color: #432e25;
+        position: absolute;
+        width: 80px;
+        height: 100px;
+        top: 70%;
+        left: 12%;
+        z-index: 1;
+        border-radius: 5em 5em 2em 2em;
+        align-self: center; }
+      main .dog-wrapper .dog .foot1 {
+        width: 40px;
+        height: 40px;
+        background-color: #644437;
+        position: absolute;
+        top: 140%;
+        border-radius: 20%;
+        z-index: 0; }
+      main .dog-wrapper .dog .foot2 {
+        width: 40px;
+        height: 40px;
+        background-color: #644437;
+        position: absolute;
+        top: 140%;
+        left: 64%;
+        border-radius: 20%;
+        z-index: 0; }
+      main .dog-wrapper .dog .foot3 {
+        width: 30px;
+        height: 70px;
+        background-color: #644437;
+        position: absolute;
+        top: 115%;
+        left: 15%;
+        border-radius: 10%;
+        z-index: 2; }
+      main .dog-wrapper .dog .foot4 {
+        width: 30px;
+        height: 70px;
+        background-color: #644437;
+        position: absolute;
+        top: 115%;
+        left: 58%;
+        border-radius: 10%;
+        z-index: 2; }
+    main .dog-wrapper .dogForm {
+      margin-top: 2em;
+      background-color: gray;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60%;
+      padding: 1em;
+      border-radius: 1em 0 1em 0;
+      justify-content: space-between;
+      align-items: center; }
+      main .dog-wrapper .dogForm p {
+        color: #F0F6F6;
+        font-size: 1.5em;
+        font-weight: 100;
+        margin-bottom: 1em; }
+      main .dog-wrapper .dogForm form {
+        color: #F0F6F6;
+        justify-self: flex-end;
+        align-self: flex-start; }
+        main .dog-wrapper .dogForm form input {
+          padding: .25em;
+          border-radius: .25em;
+          border-color: black;
+          color: #022324; }
+      main .dog-wrapper .dogForm .firstForm {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 20px; }
+  main button {
+    padding: .5em 1em;
+    border-radius: 5%;
+    margin-left: .5em;
+    background-color: #05585B;
+    color: #F0F6F6; }
+
+footer {
+  background-color: #05585B;
+  height: 2em;
+  color: #F0F6F6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  padding: .5em;
+  bottom: 0px;
+  margin-top: 4em; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/* LARGE SCSS DOCUMENT FOR DESKTOPS */
+@media only screen and (min-width: 560px) {
+  .nav-wrapper nav {
+    max-width: 1200px; }
+    .nav-wrapper nav ul {
+      float: left; }
+      .nav-wrapper nav ul li {
+        align-self: center;
+        padding: 0 1em; }
+        .nav-wrapper nav ul li a {
+          padding: .5em .1em; } }
+
+/*# sourceMappingURL=styles.css.map */

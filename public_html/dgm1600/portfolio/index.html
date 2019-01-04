@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta chartset="utf-8" />
+    <meta name="viewport" width="device-width" initial-scale="1" maximum-scale="1" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/agn3xcn.css">
+    <link rel="icon" type="image/png" href="../../LandingStyles/Images/favicon.ico" />
+</head>
+  <body>
+    <div class="page-wrap">
+      <header>
+      </header>
+        <!-- NAVIGATION GOES HERE -->
+        <div class="nav-wrapper clearfix">
+            <nav class="clearfix">
+              <ul class="clearfix">
+                <li><a href="../../index.html" >Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#" class="active">Courses</a>
+                  <ul>
+                    <li><a href="../index.html" class="active">Intro to Scripting</a></li>
+                    <li><a href="../../dgm2120/">Intro to Web</a></li>
+                    <li><a href="../../dgm2740/">Web Languages</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Projects</a>
+                  <ul>
+                    <li><a href="../Projects_For_Final/Bond_Baseball_Cards/index.html">Baseball Cards</a></li>
+                    <li class="active"><a href="#">Star Wars API</a></li>
+                    <li><a href="../Objects/index.html">Objects in Javascript</a></li>
+                    <li><a href="../Arrays/">Arrays</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://github.com/10818122">Github</a></li>
+              </ul>
+            </nav>
+          </div>
+      
+      <main>
+        <section id="welcome-section clearfix">
+          <h1 id="welcomeHeader">Welcome</h1>
+          <h3>In this section, we'll explore objects and arrays using the Star Wars API</h3>
+          <div class="card text-center buttonSwapi">
+            <div class="card-header">
+              Display a Random Star Wars Planet
+            </div>
+            <div class="card-body buttonCard">
+              <h5 class="card-title">Swapi Button Test </h5>
+              <p class="card-text">Click on the button to get a star wars planet</p>
+              <button name="planetButton" type="submit" class="btn btn-primary planetButton">Give Me a Planet</button>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+
+        </section>
+        <section id="projects clearfix">
+          <h1>Projects</h1>
+          <div class="projectSwapi">
+              <h2 id="charName">Star Wars Characters</h2>
+              <form>
+                <p id="swapi-charButton"></p>
+                <ul class="charList">
+                  
+                </ul>
+              </form>
+          </div>
+
+
+        </section>
+      
+        <div class="card">
+          <div class="card-header">
+            Star Wars Movie List
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">SWAPI</h5>
+            <ul class="cardList">
+
+            </ul>
+          </div>
+        </div>
+      
+      </main>
+    
+      <footer>
+        &copy; Kurt Heimbigner &bull; UVU Digital Media &bull; 09/2018
+      </footer>
+        <script type="module" src="main.js">
+          //Using fetch to grab objects/properties from swapi.co, the Star Wars API
+        
+        </script>
+    </div>
+  </body>
+</html>

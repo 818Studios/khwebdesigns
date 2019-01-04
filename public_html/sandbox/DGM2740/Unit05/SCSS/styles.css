@@ -1,0 +1,244 @@
+/* CSS Document */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* CSS DOCUMENT */
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: 'Arima Madurai', cursive;
+}
+
+body {
+  background-color: #B2791A;
+  color: #FFFFFA;
+}
+
+/* HEADER STYLES */
+header {
+  height: 110px;
+  background-color: #E5B666;
+  position: relative;
+}
+header figure {
+  margin-right: 1em;
+}
+header figure.logo {
+  position: absolute;
+  left: 2%;
+  bottom: 0;
+}
+header h1, header h2 {
+  padding-left: 125px;
+}
+header h1 {
+  font-size: 2em;
+  padding-top: .75em;
+}
+header h2 {
+  font-size: 1.5em;
+}
+
+nav {
+  background-color: #7F3106;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  width: 25%;
+  border-right: 1px solid #4C1D04;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  color: #FFFFFA;
+  padding: .5em .1em;
+}
+nav ul li.active {
+  background-color: #4C1D04;
+}
+nav ul li:nth-child(4) {
+  border-right: none;
+}
+
+.navWrapper {
+  background-color: #7F3106;
+}
+
+picture {
+  width: 100vw;
+  max-width: 1200px;
+}
+
+picture.heroImg img {
+  width: 100%;
+}
+
+.paraColumns {
+  columns: 1;
+}
+
+main h2 {
+  font-size: 1.5em;
+}
+main div.ourStory {
+  width: 100%;
+}
+main div.ourStory p {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+main img {
+  float: right;
+}
+
+footer {
+  background-color: #7F3106;
+  text-align: center;
+  padding: .75em .5em;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* MEDIUM SCSS DOCUMENT FOR TABLETS */
+@media only screen and (min-width: 560px) {
+  .paraColumns {
+    columns: 2;
+  }
+}
+/* end media query */
+/* LARGE SCSS DOCUMENT FOR DESKTOPS */
+@media only screen and (min-width: 1140px) {
+  nav ul {
+    float: left;
+  }
+  nav ul li {
+    align-self: center;
+    padding: 0 1em;
+  }
+
+  main .paraColumns {
+    columns: 4;
+  }
+  main div.ourStory p {
+    margin-bottom: 1.5em;
+  }
+
+  figure.ourFounder img {
+    float: right;
+  }
+}

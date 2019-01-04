@@ -1,0 +1,92 @@
+/* CSS Document */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* apply a natural box layout model to all elements */ * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+
+/* Website Style */
+* {
+	color: #00000;
+	font-family: Helvetica, "sans-serif";
+	margin: 0px;
+	max-width: 75rem;
+}
+
+/* Body Style */
+
+
+/* Header Style */
+header h1 {
+	padding: 2rem 0px;
+	font-size: 48px;
+	font-weight: normal;
+	background-color: $primaryColor;
+}
+	
+/* Navigation Style */
+
+nav {
+	width: 100%;
+	height: 2.5rem;
+	background-color: $secondaryColor;
+}
+
+nav ul li {
+	float: left; 	
+	font-size: 24px;
+	border-right: 3px solid #000000;
+
+}
+
+ul li:last-child {
+	border-right: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #000000;
+	display: block;
+	padding: .5rem 1rem;
+	background-color: $secondaryColor;
+	//padding: 5px .5rem;
+	
+	
+}
+
+nav ul li a:hover {
+	background-color: $tertiaryColor;
+}
+
+nav ul li a:active{
+	background-color: $tertiaryColor;
+}
+
+.active {
+	background-color: $tertiaryColor;
+}
+
+.keepOpen {
+	clear: both;
+}
+
+/* Content Style */
+
+main h1 {
+	padding: 2rem .5rem 1rem .5rem;
+	font-size: 2.5rem;
+	font-weight: 500;
+	clear: both;
+}
+
+.deviceImage {
+	width: 50%;
+	height: auto;
+}
+
+/* Footer style */
+
+footer {
+	text-align: center;
+	font-size: 1rem;
+	background-color: $primaryColor;
+	padding: .3rem 0;
+}
+

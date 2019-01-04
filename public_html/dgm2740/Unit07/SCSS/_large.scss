@@ -1,0 +1,52 @@
+/* LARGE SCSS DOCUMENT FOR DESKTOPS */
+
+@media only screen and (min-width: 1140px) {
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//============================= COLUMN LAYOUT ================================	
+@for $i from 1 through 12 {
+	$w: ($i / 12) * 100%;
+	.large-#{$i} {
+		width: $w; float: left;
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//================================= FOOTER ==========================================	
+//================================= FONTAWESOME SOCIAL ICONS ========================
+	
+	footer{
+		ul.social li i{
+			font-size: 3.2rem;
+		}
+	}
+	
+		
+	
+	
+	
+	
+} //============== END MEDIA QUERY ======================
